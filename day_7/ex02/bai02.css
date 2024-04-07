@@ -9,7 +9,7 @@ html{
     font-family: "Nunito", sans-serif;
 }
 .login-bgr{
-    height: 730px;
+    height: 400px;
     background-color: black;
     background-image: url(img/login-bg2.jpg);
     background-repeat: no-repeat;
@@ -22,7 +22,7 @@ html{
 .form-login{
     display: flex;
     text-align: center;
-    width: 500px;
+    width: 600px;
     height: 300px;
     border: 0.5px solid red;
     border-radius: 10px;
@@ -87,10 +87,47 @@ html{
     background-position:70% bottom; 
     background-repeat: no-repeat; 
     line-height: 40px;
+    margin-bottom: 20px;
 }
 
 .form-right strong{
     color: red;
 }
+.login-here label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.login-here a {
+    color: grey;
+    text-decoration: none;
+
+}
+
+.login-here button{
+    width: 87%;
+    background-color: #ff574d;
+    border: 1px solid #ff574d;
+    border-radius: 5px;
+    color: white;
+    font-size: 0.9rem;
+    height: 30px;
+}
+.remmem-form {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.form-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.form-footer a{
+    text-decoration: none;
+    color: grey;
+    padding-left: 5px;
+}
+
 
 
