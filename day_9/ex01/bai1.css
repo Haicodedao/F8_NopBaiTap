@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: "Inter", sans-serif;
+}
+
+.col-6{
+    width: calc(100% / 2);
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro-common{
+    font-size: 1.2rem;
+    font-family: "Space Grotesk", sans-serif;
+    width: calc(100%);
+    text-align: right;
+    display: flex;
+}
+
+.info-text {
+    padding-right: 10px;
+    border-right: 1px solid grey;
+    margin-bottom: 15px;
+}
+
+.info-time{
+    padding-left: 5px;
+}
+
+.intro-common .info-text{
+    width: 70%;
+}
+.info-common .info-time{
+    width: 30%;
+}
+
+.info-common p{
+    color: gray;
+    font-size: 1rem;
+}
+.info-time p{
+    font-size: 1rem;
+}
+.intro-common a{
+    display: inline-block;
+    width: fit-content;
+    padding: 0 3px;
+    text-decoration: none;
+    color: grey;
+    background-color: rgb(194, 194, 194);
+}
+
+.form-img{
+    position: relative;
+}
+
+
+.img-in{
+    position: absolute;
+    left: calc(50% - 75px);
+    background: white url("https://picsum.photos/150/200") no-repeat;
+    width: 150px;
+    height: 200px;
+}
+
+.img-on {
+    position: absolute;
+    top: calc(50% - 30px);
+    right: calc(50% - 40px);
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    width: 90px; 
+    height: 120px; 
+    top: 10px;
+    left: 5px;
+    background-color: blue;
+    opacity: 0.8;
+    background-size: cover;
+}
