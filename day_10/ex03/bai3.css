@@ -120,6 +120,10 @@ body{
     height: 10px;
     width: 20%;
     background: #cb5a5e;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+
 }
 
 .letter-stamp{
@@ -144,8 +148,9 @@ body{
 
     .animated-mail .letter{
         height: 180px;
-        .shadow{
-            width: 250px;
-        }
+        
+    }
+    .shadow{
+        width: 250px;
     }
 }
