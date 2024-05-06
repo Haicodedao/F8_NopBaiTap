@@ -79,11 +79,14 @@
     /* background-color: ; */
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
+
 }
 
 .btn-click.btn-click__right{
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+    background-color: transparent;
+    color: var(--color);
 }
 
 
@@ -100,6 +103,7 @@
     border-radius: 12px;
     color: var(--color-form);
     padding: 64px;
+    transition: all 0.2s linear;
 }
 
 .login-form__info h2{
@@ -295,6 +299,26 @@ input:checked + span::before {
 
 /* Animation login - register */
 
+
+
+.login:checked ~ .container > .row > .col-6 > .landing-login__info > .info-btn > .div-btn__click > .btn-click__left{
+    background-color: var(--color);
+    color: #333;
+}
+.login:not(.login:checked) ~ .container > .row > .col-6 > .landing-login__info > .info-btn > .div-btn__click > .btn-click__right{
+    background-color: var(--color);
+    color: #333;
+}
+
+.login:not(.login:checked) ~ .container > .row > .col-6 > .landing-login__info > .info-btn > .div-btn__click > .btn-click__left{
+    background-color: transparent;
+    color: var(--color);
+}
+
+.login:not(.login:checked) ~ .container >.row > .col-6 > .landing-form__login > .login-form__info{
+    transform: translateX(200px);
+    opacity: 0;
+}
 
 
 
