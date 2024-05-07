@@ -92,8 +92,10 @@
 
 /* Start Login form */
 .landing-form__login{
+    /* position: relative; */
     margin-left: 50px;
 }
+.login-form__register,
 .login-form__info{
     position: relative;
     width: 484px;
@@ -103,8 +105,19 @@
     border-radius: 12px;
     color: var(--color-form);
     padding: 64px;
-    transition: all 0.2s linear;
+    transition: all 0.5s linear;
+    z-index: 2;
 }
+
+.login-form__register{
+    position: absolute;
+    top: 10%;
+    transform: translateX(300px);
+    opacity: 0;
+    transition: all 0.5s linear;
+    z-index: 1;
+}
+
 
 .login-form__info h2{
     font-size: 1.625rem;
@@ -318,6 +331,13 @@ input:checked + span::before {
 .login:not(.login:checked) ~ .container >.row > .col-6 > .landing-form__login > .login-form__info{
     transform: translateX(200px);
     opacity: 0;
+    z-index: 2;
+}
+
+.login:not(.login:checked) ~ .container >.row > .col-6 > .landing-form__login > .login-form__register{
+    opacity: 1;
+    transform: translateX(0);
+    z-index: 2;
 }
 
 
